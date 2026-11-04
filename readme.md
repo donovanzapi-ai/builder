@@ -109,7 +109,9 @@ Ejecuta el método main para verificar que:
 
 #### Preguntas de Análisis:
 - ¿Cómo mejora la legibilidad del código cliente el uso del patrón Builder?
+Permite encadenar metodos uno tras otro, lo cual hace quese mas facil leerlo y explicarlo.
 - ¿Qué ventaja tiene hacer la clase `Builder` estática e interna?
+Esto permite que se puede hacer llamados a la clase builder sin la necesidad de tener que crear nuevos clases y que justamente no haya repeticiones o que se pierda la informacion tras llamarla varias veces.
 - ¿Garantiza este patrón la inmutabilidad del objeto `User`? ¿Por qué?
-
+Lo hacemos desde crear la instancia final y que dentro de esta no haya metodos como set que la alteren y al declararlo private solo no podra modificarse por otra.
 ---
